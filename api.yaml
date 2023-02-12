@@ -1,0 +1,4 @@
+version: '3'
+services:
+  api-inst:
+    image: zcohn93/webapp-gateway-api:0.2
