@@ -1,7 +1,14 @@
 FROM node:alpine
 
-RUN mkdir -p /home/webapp
+WORKDIR /usr/app
 
-COPY . /home/webapp
+COPY package*.json ./
 
-CMD ["node"]
+RUN npm install
+RUN npm install -g nodemon
+
+COPY . .
+
+EXPOSE 4000
+
+CMD ["nodemon", "/usr/app/index.js"]
