@@ -1,5 +1,9 @@
+HOST_PORT=4000
+GUEST_PORT=4000
+
 docker run \
 -d -i -t \
--p 4000:4000 \
+-e PORT=$GUEST_PORT \
+-p $HOST_PORT:$GUEST_PORT \
 --name api \
-zcohn93/webapp-gateway-api:0.5
+zcohn93/webapp-gateway-api:0.6
