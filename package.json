@@ -1,23 +1,24 @@
 {
-    "name": "webapp",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
+  },
+  "repository": {
       "type": "git",
       "url": "git+https://github.com/z-cohn/webapp-api-gateway.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
       "url": "https://github.com/z-cohn/webapp-api-gateway/issues"
-    },
-    "homepage": "https://github.com/z-cohn/webapp-api-gateway#readme",
-    "dependencies": {
-        "express": "^4.18.2"
-      }
+  },
+  "homepage": "https://github.com/z-cohn/webapp-api-gateway#readme",
+  "dependencies": {
+      "express": "^4.18.2",
+      "mongoose": "^7.0.3"
   }
+}
