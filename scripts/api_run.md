@@ -10,4 +10,4 @@ docker run \
 -e DB_PW=$DB_PW \
 -p $HOST_PORT:$GUEST_PORT \
 --name api \
-zcohn93/webapp-gateway-api:0.7
+zcohn93/webapp-gateway-api:0.8

@@ -14,7 +14,7 @@ mongoose.connect(dbURI)
 
 app.use(express.json())
 
-const usersRouter = require('./routes/users')
+const usersRouter = require('../routes/users')
 app.use('/users', usersRouter)
 
 app.get('/', (req, res) => {
