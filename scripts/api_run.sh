@@ -1,7 +1,4 @@
-HOST_PORT=4000
-GUEST_PORT=4000
-DB_USER=zcohn
-DB_PW=arteckMusicDB
+#!/bin/bash
 
 docker run \
 -d -i -t \
