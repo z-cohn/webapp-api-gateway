@@ -14,8 +14,6 @@ RUN npm install
 RUN npm install -g nodemon
 
 COPY . .
-RUN mv scripts/.netrc ~
-RUN mv scripts/.gitconfig ~
 
 EXPOSE ${PORT}
 
