@@ -1,5 +1,9 @@
 FROM node:alpine
 
+RUN apk update
+RUN apk upgrade
+RUN apk add git
+
 ENV PORT=4000
 
 WORKDIR /usr/app
@@ -10,6 +14,8 @@ RUN npm install
 RUN npm install -g nodemon
 
 COPY . .
+RUN mv scripts/.netrc ~
+RUN mv scripts/.gitconfig ~
 
 EXPOSE ${PORT}
 
